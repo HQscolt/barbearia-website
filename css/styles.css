@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+
+  #agendamento h2 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  #bookingForm .form-control, 
+  #bookingForm .form-select {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}

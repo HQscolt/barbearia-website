@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia</title>
+  <!-- Link para o CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link para o CSS customizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Barbearia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cabelo.jpg" class="d-block w-100" alt="Corte de Cabelo">
+      </div>
+      <div class="carousel-item">
+        <img src="img/barba.jpg" class="d-block w-100" alt="Barba">
+      </div>
+      <div class="carousel-item">
+        <img src="img/roupas.jpg" class="d-block w-100" alt="Roupas">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Seções -->
+  <section id="services" class="container mt-5">
+    <h2>Nossos Serviços</h2>
+    <p>Descrição dos serviços oferecidos.</p>
+  </section>
+
+  <section id="about" class="container mt-5">
+    <h2>Sobre Nós</h2>
+    <p>Informações sobre a equipe da barbearia.</p>
+  </section>
+
+  <section id="contact" class="container mt-5">
+    <h2>Contato</h2>
+    <p>Informações de contato e o botão de WhatsApp.</p>
+    <a href="https://wa.me/1234567890" class="btn btn-success">Contato via WhatsApp</a>
+  </section>
+
+  <section id="agendamento" class="container mt-5">
+    <h2>Agende um Horário</h2>
+    <form id="bookingForm" class="row g-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="name" placeholder="Seu nome completo" required>
+        </div>
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="(xx) xxxx-xxxx" required>
+        </div>
+        <div class="col-md-6">
+            <label for="service" class="form-label">Serviço</label>
+            <select id="service" class="form-select" required>
+                <option selected disabled>Escolha um serviço...</option>
+                <option>Corte de Cabelo</option>
+                <option>Barba</option>
+                <option>Corte + Barba</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="date" class="form-label">Data</label>
+            <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Agendar</button>
+        </div>
+    </form>
+</section>
+
+<section id="cortes" class="container mt-5">
+    <h2>Cortes Populares</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/corte1.jpg" class="d-block w-100" alt="Corte 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/corte2.jpg" class="d-block w-100" alt="Corte 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/corte3.jpg" class="d-block w-100" alt="Corte 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<button type="submit" class="btn btn-primary btn-lg">
+    <i class="bi bi-calendar-check-fill"></i> Agendar Agora
+</button>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+<!-- Botão WhatsApp Fixo -->
+<a href="https://wa.me/5544991274728" class="whatsapp-button" target="_blank">
+    <img src="img/whatsapp-icon.png" alt="WhatsApp">
+</a>
+
+
+  <!-- Link para o JavaScript do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
